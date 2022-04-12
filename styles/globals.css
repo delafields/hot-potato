@@ -7,3 +7,6 @@
   text-shadow: 2px 2px 8px red, 0 0 5px white;
   transform: skewX(-6deg) rotate(-9deg) skewY(6deg) skewX(-12deg);
 }
+#subtitle {
+  transform: skewX(-6deg) rotate(-9deg) skewY(6deg) skewX(-12deg);
+}
