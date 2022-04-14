@@ -8,15 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'mustard': '#ECE942',
+        'mustard': 'yellow',
         'myred': '#ff0000'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(ellipse at center, var(--tw-gradient-stops))'
       },
       fontFamily: {
-        "slabby": ["Alfa Slab One", ...defaultTheme.fontFamily.sans],
-        "funky": ["Shrikhand", ...defaultTheme.fontFamily.sans],
+        "nunito": ["Nunito", ...defaultTheme.fontFamily.sans],
         "monoton": ["Monoton", ...defaultTheme.fontFamily.sans]
       }
     },
