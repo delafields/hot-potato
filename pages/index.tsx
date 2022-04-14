@@ -23,16 +23,17 @@ const Home: NextPage = () => {
 
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 bg-gradient-to-t from-red-50 to-white">
+    <div className="flex min-h-screen min-w-screen flex-col items-center justify-center bg-gradient-to-t from-red-50 to-white"> 
       <Head>
-        <title>Hot Spud NFT</title>
+        <title>Hot Potatoes</title>
         <link
           rel="icon"
           href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center text-center font-nunito font-black">
+      <main className="flex min-w-full flex-1 flex-col items-center justify-center text-center font-nunito font-black">
           <h1 id="title" className="text-6xl mt-6 font-bold font-monoton">
             Hot Potatoes
           </h1>
@@ -44,11 +45,11 @@ const Home: NextPage = () => {
             mechanics
         </h1>
 
-        <div className="w-3/4 flex flex-col gap-4">
+        <div className="w-full sm:w-3/4 max-w-3xl flex flex-col gap-4">
           {mechanics.map((m) => (
-            <div className="bg-white p-4 shadow-lg flex items-center justify-between border-8 border-mustard rounded-xl text-xl">
-              <p className="w-1/3">{ m.text }</p>
-              <div className="h-64 w-96 relative mb-4">
+            <div className="bg-white p-4 shadow-lg flex flex-col sm:flex-row items-center justify-between border-8 border-mustard rounded-xl text-xl">
+              <p className="w-full sm:w-1/3">{ m.text }</p>
+              <div className="h-64 w-full sm:w-96 relative mb-4">
                 <Image src={ m.gif } layout="fill"/>
               </div>
             </div>
@@ -57,7 +58,7 @@ const Home: NextPage = () => {
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           
-          <div className="mt-6 w-96 rounded-xl border p-6 text-left">
+          <div className="mt-6 w-96 rounded-xl border border-2 p-6 text-left">
             <h3 className="text-2xl font-bold mb-4">Most transacted</h3>
             <div className="flex justify-around">
               <Image src="/150.png" height={150} width={150}
@@ -71,7 +72,7 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="mt-6 w-96 rounded-xl border p-6 text-left">
+          <div className="mt-6 w-96 rounded-xl border border-2 p-6 text-left">
             <h3 className="text-2xl font-bold mb-4">Record pot</h3>
             <div className="flex justify-around">
               <Image src="/150.png" height={150} width={150}
@@ -87,14 +88,14 @@ const Home: NextPage = () => {
           
           <a
             href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-myred focus:text-myred"
+            className="mt-6 w-96 rounded-xl border border-2 p-6 text-left hover:text-myred focus:text-myred"
           >
             <h3 className="text-2xl font-bold">Mint &rarr;</h3>
           </a>
 
           <a
             href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-myred focus:text-myred"
+            className="mt-6 w-96 rounded-xl border border-2 p-6 text-left hover:text-myred focus:text-myred"
           >
             <h3 className="text-2xl font-bold">View collection &rarr;</h3>
           </a>
