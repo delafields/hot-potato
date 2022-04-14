@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2 bg-radial from-red-200 to-gray-50">
       <Head>
-        <title>Hot Spud N</title>
+        <title>Hot Spud NFT</title>
         <link
           rel="icon"
           href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>"
@@ -14,11 +14,11 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center font-funky">
-          <h1 id="title" className="text-6xl font-bold font-monoton">
-            Hot Spud N
+          <h1 id="title" className="text-6xl mt-6 font-bold font-monoton">
+            Hot Spud NFT
           </h1>
           <p id="subtitle" className="text-l text-myred mb-6">
-            The N that rewards doing stuff with it
+            The NFT that rewards doing stuff with it
           </p>
         
         <h1 className="text-4xl text-mustard bg-black rounded-xl px-4">
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           <div className="h-64 w-96 relative mb-4">
             <Image src="/../public/hot-potato-normal.gif" height={306} width={323} layout="fill"/>
           </div>
-          So, the more your potato has gotten passed around, the larger the holder's pot is! This encourages trading. If you take in the likely possibility that the price will increase as the pot gets larger, (something about gainz here)
+          The more a potato has gotten passed around, the larger the holder's pot is! This encourages trading. If you take in the likely possibility that the price will increase as the pot gets larger, (something about gainz here)
           <div className="h-64 w-96 relative mb-4">
             <Image src="/../public/hot-potato-fast.gif" height={306} width={323} layout="fill"/>
           </div>
