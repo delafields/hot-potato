@@ -50,7 +50,7 @@ const Home: NextPage = () => {
             <div className="bg-white p-4 shadow-lg flex flex-col sm:flex-row items-center justify-between border-8 border-mustard rounded-xl text-xl">
               <p className="w-full sm:w-1/3">{ m.text }</p>
               <div className="h-64 w-full sm:w-96 relative mb-4">
-                <Image src={ m.gif } layout="fill"/>
+                <Image src={ m.gif } unoptimized={true} layout="fill"/>
               </div>
             </div>
           ))}
